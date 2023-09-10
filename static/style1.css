@@ -1,0 +1,124 @@
+@import url(https://db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand+Script%29);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Snell Roundhand Script', cursive;
+
+}
+body {
+    background-color:rgb(114, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login span{
+    position:absolute;
+    left: 0;
+    width: 30px;
+    height: 7px;
+    background:red;
+    /* border-radius: 9px; */
+     transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i)*(360deg / 70)));
+    animation:animateBlink 3s linear infinite;
+    animation-delay:calc(var(--i)*(1s / 50)) ; 
+
+}
+@keyframes animateBlink{
+    0%{
+        background:aqua;
+    }
+    25%{
+        background-color: antiquewhite;
+
+    }
+}
+.container{
+    position:absolute;
+    width: 400px;
+    
+    /* background-color:firebrick; */
+}
+ .container form{
+    width:100%;
+    padding: 0 50px;
+ }
+ h2 {
+    font-size: 2em;
+    color: red;
+    text-align: center;
+ }
+ .input-box{
+    position: relative;
+    margin: 25px 0;
+
+ }
+ .input-box input{
+    height: 50px;
+    width: 100% ;
+    background: transparent;
+   border: 3px solid blue;
+   outline: none;
+   border-radius: 40px;
+
+ }
+ input-box input:focus,
+  .input-box input:valid{
+    top:1px;
+    font-size: 0.8em;
+    background:rgb(114, 114, 114);
+    padding: 0 7px;
+  }
+  .input-box label{
+    position:absolute;
+    top:50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: .5s;
+    pointer-events: painted;
+  }
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top:1px;
+    font-size: 0.8em;
+    background: rgb(114, 114, 114);
+    padding: 0 7px;
+  }
+
+  
+.botom{
+    width: 100%;
+    height: 45px;
+    background: blue;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 2em;
+    color: beige;
+    font-weight: 500;
+
+}
+.signup{
+    text-align: center;
+    margin: 20px 0 10px;
+    /* color: aquamarine; */
+}
+.signup a{
+    color:blue;
+    font-weight: 500;
+    font-size: 1em;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+
+
